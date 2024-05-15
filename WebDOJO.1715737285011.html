@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+function 伝言する() {
+  var 入力内容 = document.getElementById("入力内容");
+  var 伝言エリア = document.getElementById("伝言エリア");
+  if (入力内容.value === "") {
+    alert("内容を入力してください");
+  } else {
+    伝言エリア.innerText = 入力内容.value;
+    alert("送信しました");
+  }
+}
+</script>
+</head>
+<body>
+<p id="伝言エリア">伝言は、まだありません</p>
+<input id="入力内容"><button onclick="伝言する();"> 送信</button>
+</body>
+</html>
